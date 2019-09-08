@@ -1,0 +1,10 @@
+body {
+    background: -webkit-linear-gradient(to left, #080f52, #3f87a6);
+    background: linear-gradient(to left, #080f52, #3f87a6);
+}
+
+
+navbar-nav{
+    margin-left: 5em;
+    margin-top: 5em; 
+}
