@@ -8,3 +8,11 @@ navbar-nav{
     margin-left: 5em;
     margin-top: 5em; 
 }
+video {
+    position: fixed;
+    top: 1;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}

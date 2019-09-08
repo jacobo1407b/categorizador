@@ -1,6 +1,5 @@
 <br>
-
-
+ <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 <div class="card container">
   <div class="card-header">
     <h1>Bienvenido {{user.name}}</h1>
@@ -15,60 +14,62 @@
 <br>
 
 <div class="row">
-<div class="col-md-2">
+<div class="col-md-3">
   <div class="card">
     <div class="card-header">
-      <h2>Ingresos</h2>
+      <h2>Gastos global</h2>
     </div>
     <div class="card-body">
-       <input type="text" name="title" class="form-control"  value="{{note.title}}">
+       <input type="text" readonly="" name="title" class="form-control"  value="Comisiones bancaria: 1250.00">
         <br>
-       <input type="text" name="title" class="form-control"  value="{{note.title}}">
+       <input type="text" readonly="" name="title" class="form-control"  value="Impuestos: 2356.8">
        <br>
-       <input type="text" name="title" class="form-control"  value="{{note.title}}">
+       <input type="text" readonly="" name="title" class="form-control"  value="Nominas: 1890.00">
        <br>
-       <input type="text" name="title" class="form-control"  value="{{note.title}}">
+       <input type="text" readonly="" name="title" class="form-control"  value="Proveedores: 12850.00 ">
+       <br>
+       <input type="text" readonly="" name="title" class="form-control"  value="Traspaso a terceros: 4500.00">
     </div>
   </div>
 </div>
 
 <br>
 
-<div class="col-md-2">
+<div class="col-md-3">
   <div class="card">
     <div class="card-header">
-      <h2>Gastos</h2>
+      <h2>Ingresos</h2>
     </div>
     <div class="card-body">
-       <input type="text" readonly=""name="title" class="form-control"  value="{{note.title}}">
+       <input type="text" readonly=""name="title" class="form-control"  value="Depositos efectivo: 2600.00">
         <br>
-       <input type="text" name="title" class="form-control"  value="{{note.title}}">
+       <input type="text" readonly="" name="title" class="form-control"  value="Transferencias: 5600.00">
        <br>
-       <input type="text" name="title" class="form-control"  value="{{note.title}}">
+       <input type="text" readonly="" name="title" class="form-control"  value="SPEI: 1500">
        <br>
-       <input type="text" name="title" class="form-control"  value="{{note.title}}">
+       <input type="text" readonly="" name="title" class="form-control"  value="Dinero electronico: 600.00">
+       <br>
+       <input type="text" readonly="" name="title" class="form-control"  value="Intereses ganados: 10.00">
     </div>
   </div>
 </div>
 
   <br>
+
   <div class="col-md-5">
   <div class="card">
       <div class="card-header">
-      <h2>Resumen</h2>
+      <h2>Resumen gastos</h2>
     </div>
     <div class="card-body">
-      <img src="/img/pastel.jpg" alt="" width="210">
+      <canvas id="eso">
+      </canvas>
+      <script src="/img/ejempo.js"></script>
     </div>
   </div>
   </div>
 
-<div class="ml-auto">
-<form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-    <button class="btn btn-outline-success my-1 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
-  </form>
-  </div>
+
 </div>
 </div>
 
