@@ -1,10 +1,11 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
-mongoose.connect('mongodb://localhost/pariente', {
+mongoose
+  .connect("mongodb://localhost/pariente", {
     useCreateIndex: true,
     useNewUrlParser: true,
-    useFindAndModify: false
-})
+    useFindAndModify: false,
+  })
 
-.then(db => console.log('conectado wey :v'))
-.catch(err => console.error(err));
+  .then((db) => console.log("data base mode development is connect"))
+  .catch((err) => console.error(err));
