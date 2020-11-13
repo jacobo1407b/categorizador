@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 mongoose
-  .connect("mongodb://localhost/pariente", {
+  .connect("mongodb+srv://j1407b:adrenalinas123@cluster0.x0glq.mongodb.net/test?retryWrites=true&w=majority", {
     useCreateIndex: true,
     useNewUrlParser: true,
     useFindAndModify: false,
